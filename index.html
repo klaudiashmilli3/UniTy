@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+
+  <div class="container" id="container">
+
+    <div class="form-container sign-up">
+      <form>
+        <h1>Registrati</h1>
+
+        <input type="text" placeholder="Nome e cognome" required>
+        <input type="text" placeholder="Codice fiscale" pattern="[A-Za-z0-9]{16}" title="Inserisci un codice fiscale valido" maxlength="16" required /> <!--L'attributo pattern contiene una regex che specifica il formato desiderato del codice fiscale. -->
+        Data di nascita: <input type="date" placeholder="Data di nascita" required>
+        <input type="number" placeholder="ISEE" required>
+        <input type="number" placeholder="Stanza" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+
+        
+        <button>Registrati</button>
+      </form>
+    </div>
+
+    <div class="form-container sign-in">
+      <form>
+        <h1>Accedi</h1>
+
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+
+        <select name="selectPage" required>
+          <option value="" selected disabled hidden>-- Scegli --</option>
+          <option value="/reception/reception">Reception</option>
+          <option value="/student/student">Student</option>
+        </select>
+
+        <button>Accedi</button>
+      </form>
+    </div>
+
+    <div class="toggle-container">
+      <div class="toggle">
+
+        <div class="toggle-panel toggle-left">
+          <h1>Bentornatə!</h1>
+          <p>Inserisci le tue credenziali</p>
+          <button class="hidden" id="login">Accedi</button>
+        </div>
+
+        <div class="toggle-panel toggle-right">
+          <h1>Benvenutə!</h1>
+          <p>Inserisci i tuoi dati personali per entrare a far parte della nostra community </p>
+          <button class="hidden" id="register">Registrati</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
