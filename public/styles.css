@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#categories {
+    margin-bottom: 20px;
+}
+
+.category {
+    margin-right: 10px;
+}
+
+#chat {
+    height: 400px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#new-conversation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#message-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
